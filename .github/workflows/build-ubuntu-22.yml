@@ -15,7 +15,7 @@ jobs:
       run: |
         sudo add-apt-repository ppa:ecal/ecal-latest
         sudo apt update
-        sudo apt-get install ecal
+        sudo apt-get install ecal libprotobuf-dev libprotoc-dev protobuf-compiler 
 
     - name: Checkout
       uses: actions/checkout@v3
