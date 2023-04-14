@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+    - name: Install eCAL
+      run: |
+        sudo add-apt-repository ppa:ecal/ecal-latest
+        sudo apt update
+        sudo apt-get install ecal
+
     - name: Checkout
       uses: actions/checkout@v3
       with:
